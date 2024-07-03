@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use(express.json())
 const corsOptions = {
-  origin: 'https://mern-ecommerce-pearl-rho.vercel.app/', 
+  origin: 'https://mern-ecommerce-pearl-rho.vercel.app', 
   methods: ['GET', 'POST'], 
   allowedHeaders: ['Content-Type', 'Authorization'], 
   credentials: true, 
