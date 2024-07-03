@@ -46,7 +46,7 @@ const Register = () => {
       } else if (credentials.password.length < 5) {
         toast.error("Please enter password with more than 5 characters", { autoClose: 500, theme: 'colored' });
       } else {
-        const sendAuth = await axios.post(`http://localhost:8000/api/auth/register`, {
+        const sendAuth = await axios.post(`https://mern-ecommerce-backend-eight.vercel.app/register`, {
           firstName: credentials.firstName,
           lastName: credentials.lastName,
           email: credentials.email,
